@@ -156,6 +156,13 @@ h1 span {
 }
 .quick { grid-template-columns: minmax(0, .78fr) minmax(0, 1.22fr); }
 .quick h2 span { color: var(--green); }
+.operator-art {
+  display: block;
+  width: min(100%, 19rem);
+  height: auto;
+  margin-top: 1rem;
+  border: 1px solid var(--line);
+}
 .quick ol {
   margin: 0;
   padding-inline-start: 2.4rem;
@@ -207,6 +214,10 @@ h1 span {
   .instrument { padding-bottom: 1.25rem; }
   .instrument-copy { padding-inline: .25rem; }
   .quick, .release { gap: .65rem; }
+  .quick > div:first-child { display: contents; }
+  .quick .index { grid-row: 1; }
+  .quick h2 { grid-row: 2; margin-block: 0; }
+  .operator-art { grid-row: 4; margin-top: .35rem; }
   .release .download { justify-self: start; margin-top: .45rem; }
   .foot { align-items: flex-start; flex-direction: column; gap: .65rem; }
 }
